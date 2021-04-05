@@ -31,6 +31,7 @@ export const StyledTextField = styled(TextField)`
 
 export const StyledTitle = styled.h2`
   text-align: center;
+  font-size: 3vw;
 `
   
 

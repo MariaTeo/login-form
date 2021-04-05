@@ -3,7 +3,6 @@ import { Formik } from 'formik';
 import * as SF from './login-form.styled'
 
 const LoginForm = () => {
-
   const initialValues = {
     userName: '',
     email: '',
@@ -16,11 +15,13 @@ const LoginForm = () => {
     'password',
   ]
 
+  const paperStyle={padding:20}
+
   console.log(initialValues)
 
   return (
-    <SF.StyledPaper elevation={6}>
-      <SF.StyledTitle>Login details</SF.StyledTitle>
+    <SF.StyledPaper elevation={10} style={paperStyle}>
+      <SF.StyledTitle>Login Form</SF.StyledTitle>
       <Formik initialValues={initialValues}>
         {({ values, setFieldValues, handleChange, handleSubmit}) => (
           <SF.StyledForm>
