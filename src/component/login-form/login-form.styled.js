@@ -1,4 +1,4 @@
-import { Avatar, Paper, TextField } from '@material-ui/core';
+import { Avatar, Button, Paper, TextField } from '@material-ui/core';
 import { Form } from 'formik';
 import styled from 'styled-components';
 
@@ -34,6 +34,4 @@ export const StyledTitle = styled.h2`
   font-size: 2.7vw;
   font-family: Arial, Helvetica, sans-serif;
 `
-export const StyledAvatar = styled(Avatar)`
-  background-color: green;
-`
+
