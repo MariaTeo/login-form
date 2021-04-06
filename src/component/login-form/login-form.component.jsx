@@ -1,6 +1,7 @@
 import React from 'react';
 import { Formik } from 'formik';
-import * as SF from './login-form.styled'
+import * as SF from './login-form.styled';
+import { Avatar } from '@material-ui/core';
 
 const LoginForm = () => {
   const initialValues = {
@@ -21,6 +22,7 @@ const LoginForm = () => {
 
   return (
     <SF.StyledPaper elevation={10} style={paperStyle}>
+      <Avatar></Avatar>
       <SF.StyledTitle>Login Form</SF.StyledTitle>
       <Formik initialValues={initialValues}>
         {({ values, setFieldValues, handleChange, handleSubmit}) => (

@@ -1,13 +1,13 @@
-import { Paper, TextField } from '@material-ui/core';
+import { Avatar, Paper, TextField } from '@material-ui/core';
 import { Form } from 'formik';
 import styled from 'styled-components';
 
 export const StyledPaper = styled(Paper)`
   && {
     background-color: rose;
-    height: 400px;
-    width: 500px;
-    margin-top: 2rem;
+    height: 425px;
+    width: 350px;
+    margin: 2rem auto;
   }
 `
 
@@ -25,13 +25,12 @@ export const StyledForm = styled(Form)`
 export const StyledTextField = styled(TextField)`
   && {
     margin: 10px;
-    width: 450px;
+    width: 300px;
   }
 ` 
 
 export const StyledTitle = styled.h2`
   text-align: center;
-  font-size: 3vw;
+  font-size: 2.7vw;
 `
-  
 
