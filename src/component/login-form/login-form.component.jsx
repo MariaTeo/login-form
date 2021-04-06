@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik } from 'formik';
 import * as SF from './login-form.styled';
-import { Avatar } from '@material-ui/core';
+import { Grid, TextField } from '@material-ui/core';
 
 const LoginForm = () => {
   const initialValues = {
@@ -21,27 +21,17 @@ const LoginForm = () => {
   console.log(initialValues)
 
   return (
-    <SF.StyledPaper elevation={10} style={paperStyle}>
-      <Avatar></Avatar>
-      <SF.StyledTitle>Login Form</SF.StyledTitle>
-      <Formik initialValues={initialValues}>
-        {({ values, setFieldValues, handleChange, handleSubmit}) => (
-          <SF.StyledForm>
-            {initialLabels.map(l => {
-              return (
-                <SF.StyledTextField
-                  id="outlined-basic"
-                  variant="outlined"
-                  type="Text"
-                  label= {l}
-                />
-              )
-            })}
-          </SF.StyledForm>
-        )
-        }
-      </Formik> 
-    </SF.StyledPaper>
+    <Grid>
+      <SF.StyledPaper elevation={10} style={paperStyle}>
+        <Grid align='center'>
+          <SF.StyledAvatar></SF.StyledAvatar>
+          <SF.StyledTitle>Sign In</SF.StyledTitle>
+        </Grid>
+        <TextField label='Username' placeholder='Enter username' fullWidth required/>
+        <TextField label='Password' placeholder='Create password' type='password' fullWidth required/>
+      </SF.StyledPaper>
+    </Grid>
+    
   )
 };
 

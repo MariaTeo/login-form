@@ -32,5 +32,8 @@ export const StyledTextField = styled(TextField)`
 export const StyledTitle = styled.h2`
   text-align: center;
   font-size: 2.7vw;
+  font-family: Arial, Helvetica, sans-serif;
 `
-
+export const StyledAvatar = styled(Avatar)`
+  background-color: green;
+`
